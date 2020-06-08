@@ -1,0 +1,768 @@
+/*============================================================= */
+
+#man {
+    position: absolute;
+    width: 34px;
+    height: 232px;
+    top: 45%;
+    left: 55%;
+    margin-left: 166px;
+    margin-top: -80px;
+    z-index: -1;
+}
+
+#man .shadow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 40px;
+    height: 12px;
+    margin-left: -24px;
+    border-radius: 10px;
+    background: #084692
+}
+
+#man .head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 64px;
+    background: #ffdab9;
+    border-radius: 10px;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-animation: head 1.8s infinite ease-in-out;
+    animation: head 1.8s infinite ease-in-out
+}
+
+@-webkit-keyframes head {
+
+    0%,
+    100% {
+        -webkit-transform: rotate(1deg);
+        transform: rotate(1deg)
+    }
+
+    25%,
+    75% {
+        -webkit-transform: rotate(-2deg);
+        transform: rotate(-2deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes head {
+
+    0%,
+    100% {
+        -webkit-transform: rotate(1deg);
+        transform: rotate(1deg)
+    }
+
+    25%,
+    75% {
+        -webkit-transform: rotate(-2deg);
+        transform: rotate(-2deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+#man .head .neck {
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin-left: -4px;
+    background: #ffdab9
+}
+
+#man .head .neck::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 14px;
+    height: 5px;
+    margin-left: -7px;
+    background: #ffdab9;
+    border-radius: 3px
+}
+
+#man .head .hair {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 16px;
+    background: #111;
+    border-radius: 10px 10px 0 0
+}
+
+#man .head .hair::before {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 11px solid #111
+}
+
+#man .head .hair::after {
+    content: '';
+    position: absolute;
+    top: 11px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #111
+}
+
+#man .head .hair .stump {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0
+}
+
+#man .head .hair .stump::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -1px;
+    width: 12px;
+    height: 3px;
+    background: #111;
+    border-radius: 100%
+}
+
+#man .head .hair .stump::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 2px;
+    width: 3px;
+    height: 12px;
+    background: #111;
+    border-radius: 100%
+}
+
+#man .head .hair .bangs {
+    position: absolute;
+    bottom: 1px;
+    left: 11px;
+    width: 0;
+    height: 0
+}
+
+#man .head .hair .bangs span {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 6px solid #111;
+}
+
+#man .head .hair .bangs span:nth-child(1) {
+    left: 0
+}
+
+#man .head .hair .bangs span:nth-child(2) {
+    left: 4px
+}
+
+#man .head .hair .bangs span:nth-child(3) {
+    left: 8px
+}
+
+#man .head .hair .bangs span:nth-child(4) {
+    left: 12px
+}
+
+#man .head .ears {
+    position: absolute;
+    top: 25px;
+    left: -7px;
+    width: 15px;
+    height: 15px;
+    background: #ffdab9;
+    border-radius: 15px
+}
+
+#man .head .eyes {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    -webkit-animation: anim_eyes 10s infinite ease-in-out;
+    animation: anim_eyes 10s infinite ease-in-out;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s
+}
+
+#man .head .eyes .eye {
+    position: absolute;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    margin-top: -2px;
+    background: #333333;
+    border-radius: 50%
+}
+
+#man .head .eyes .eye.left {
+    left: 10px
+}
+
+#man .head .eyes .eye.right {
+    right: 3px
+}
+
+#man .head .lips {
+    position: absolute;
+    bottom: 9px;
+    left: 50%;
+    width: 12px;
+    height: 6px;
+    margin-left: -3px;
+    border: 1.5px solid #333333;
+    border-width: 0 1.5px 1.5px 1.5px;
+    border-radius: 0 0 12px 12px;
+}
+
+#man .torso {
+    position: absolute;
+    top: 66px;
+    left: -1px;
+    width: 38px;
+    height: 66px
+}
+
+#man .torso span {
+    -webkit-transform-origin: 50% 5%;
+    transform-origin: 50% 5%
+}
+
+#man .torso .jacket {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 66px;
+    background: #09a54a;
+    border-radius: 15px 15px 0 0
+}
+
+#man .torso .arm {
+    position: absolute;
+    width: 6px;
+    height: 40px;
+    background: #ffdab9;
+    border-radius: 3px
+}
+
+#man .torso .arm::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 8px;
+    height: 10px;
+    background: #ffdab9;
+    border-radius: 6px 6px 0 0
+}
+
+#man .torso .arm.left {
+    top: 7px;
+    left: 3px
+}
+
+#man .torso .arm.right {
+    top: 10px;
+    right: 4px;
+    z-index: 3
+}
+
+#man .torso .arm .l {
+    position: absolute;
+    top: 35px;
+    width: 6px;
+    height: 35px;
+    background: #ffdab9;
+    border-radius: 3px
+}
+
+#man .torso .arm .l .hand {
+    position: absolute;
+    top: 28px;
+    left: -4px;
+    width: 14px;
+    height: 14px;
+    background: #ffdab9;
+    border-radius: 50%
+}
+
+#man .pants {
+    position: absolute;
+    top: 132px;
+    left: 0px;
+    width: 36px;
+    height: 10px;
+    background: #333333;
+    border-radius: 0 0 3px 3px;
+    z-index: 2
+}
+
+#man .pants .leg {
+    position: absolute;
+    top: 0;
+    width: 8px;
+    height: 50px;
+    background: #333333;
+    border-radius: 3px
+}
+
+#man .pants .leg.left {
+    left: 0
+}
+
+#man .pants .leg.right {
+    right: 0
+}
+
+#man .pants .leg .l {
+    position: absolute;
+    top: 45px;
+    width: 8px;
+    height: 50px;
+    background: #333333;
+    border-radius: 3px
+}
+
+#man .pants .leg .l .foot {
+    position: absolute;
+    top: 43px;
+    right: 0;
+    width: 22px;
+    height: 8px;
+    background: #333;
+    border-radius: 3px
+}
+
+#man .shadow {
+    -webkit-animation: anim_shadow 3.6s infinite ease-in-out;
+    animation: anim_shadow 3.6s infinite ease-in-out
+}
+
+@-webkit-keyframes anim_shadow {
+
+    0%,
+    50%,
+    100% {
+        -webkit-transform: scaleX(2.5);
+        transform: scaleX(2.5)
+    }
+
+    25%,
+    75% {
+        -webkit-transform: scaleX(2.05);
+        transform: scaleX(2.05)
+    }
+}
+
+@keyframes anim_shadow {
+
+    0%,
+    50%,
+    100% {
+        -webkit-transform: scaleX(2.5);
+        transform: scaleX(2.5)
+    }
+
+    25%,
+    75% {
+        -webkit-transform: scaleX(2.05);
+        transform: scaleX(2.05)
+    }
+}
+
+#man .torso .arm {
+    -webkit-animation: anim_arms 1.8s infinite ease-in-out;
+    animation: anim_arms 1.8s infinite ease-in-out
+}
+
+#man .torso .arm .l {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+    -webkit-animation: anim_arms 1.8s infinite ease-in-out;
+    animation: anim_arms 1.8s infinite ease-in-out
+}
+
+#man .torso .arm.right,
+#man .torso .arm.right .l {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s
+}
+
+@-webkit-keyframes anim_arms {
+
+    0%,
+    100% {
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg)
+    }
+}
+
+@keyframes anim_arms {
+
+    0%,
+    100% {
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg)
+    }
+}
+
+#man .pants .leg .l {
+    -webkit-animation: anim_legs2 1.8s infinite ease-in-out;
+    animation: anim_legs2 1.8s infinite ease-in-out
+}
+
+#man .pants .leg.left .l {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s
+}
+
+@-webkit-keyframes anim_legs2 {
+
+    0%,
+    100% {
+        -webkit-transform: rotate(-2deg);
+        transform: rotate(-2deg)
+    }
+
+    33% {
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes anim_legs2 {
+
+    0%,
+    100% {
+        -webkit-transform: rotate(-2deg);
+        transform: rotate(-2deg)
+    }
+
+    33% {
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+#man .pants span {
+    -webkit-transform-origin: 50% 5%;
+    transform-origin: 50% 5%
+}
+
+#man .pants .leg {
+    -webkit-animation: anim_legs1 1.8s infinite ease-in-out;
+    animation: anim_legs1 1.8s infinite ease-in-out
+}
+
+#man .pants .leg.left {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s
+}
+
+@-webkit-keyframes anim_legs1 {
+
+    0%,
+    100% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+
+    45% {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg)
+    }
+}
+
+@keyframes anim_legs1 {
+
+    0%,
+    100% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+
+    45% {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg)
+    }
+}
+
+#man .pants .leg .l .foot {
+    -webkit-transform-origin: 100% 5%;
+    transform-origin: 100% 5%;
+    -webkit-animation: anim_foot 1.8s infinite ease-in-out;
+    animation: anim_foot 1.8s infinite ease-in-out
+}
+
+#man .pants .leg.right .l .foot {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s
+}
+
+@-webkit-keyframes anim_foot {
+
+    0%,
+    100% {
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg)
+    }
+
+    40% {
+        -webkit-transform: rotate(5deg);
+        transform: rotate(5deg)
+    }
+
+    95% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+}
+
+@keyframes anim_foot {
+
+    0%,
+    100% {
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg)
+    }
+
+    40% {
+        -webkit-transform: rotate(5deg);
+        transform: rotate(5deg)
+    }
+
+    95% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+}
+
+#man .head .rot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 64px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .6s cubic-bezier(.2, .7, .2, 1.7);
+    transition: .6s cubic-bezier(.2, .7, .2, 1.7)
+}
+
+#man.left .head .rot {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg)
+}
+
+
+/*============================================================= */
+
+
+.ground {
+    position: absolute;
+    top: 0;
+    width: 2500px;
+    height: 500px;
+    z-index: -3;
+}
+
+.ground.one {
+    left: 0;
+    -webkit-transform: translate(0);
+    transform: translate(0)
+}
+
+.ground.two {
+    left: 1700px;
+    -webkit-transform: translate(0);
+    transform: translate(0)
+}
+
+.ground.three {
+    left: -1700px;
+    -webkit-transform: translate(0);
+    transform: translate(0)
+}
+
+.ground {
+    -webkit-animation: anim_ground_one 60s infinite linear;
+    animation: anim_ground_one 60s infinite linear
+}
+
+@-webkit-keyframes anim_ground_one {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    100% {
+        -webkit-transform: translateX(1700px);
+        transform: translateX(1700px)
+    }
+}
+
+@keyframes anim_ground_one {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    100% {
+        -webkit-transform: translateX(1700px);
+        transform: translateX(1700px)
+    }
+}
+
+.cloud_1 {
+    position: absolute;
+    bottom: 176px;
+    left: 60px;
+    width: 110px;
+    height: 16px;
+    background: #4eb3d3;
+    border-radius: 16px
+}
+
+.cloud_1::before {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: -26px;
+    width: 110px;
+    height: 16px;
+    background: #4eb3d3;
+    border-radius: 16px
+}
+
+.cloud_2 {
+    position: absolute;
+    bottom: 220px;
+    left: 1300px;
+    width: 104px;
+    height: 16px;
+    background: #2b8cbe;
+    border-radius: 16px
+}
+
+.cloud_2 .fusion {
+    position: absolute;
+    bottom: -12px;
+    left: 20px;
+    width: 20px;
+    height: 16px;
+    background: #2b8cbe;
+    border-radius: 0;
+    z-index: -1
+}
+
+.cloud_2 .fusion::before {
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    left: -8px;
+    width: 10px;
+    height: 10px;
+    border: 6px solid #fff;
+    border-width: 6px 6px 6px 0;
+    border-radius: 0 14px 14px 0;
+    z-index: -1
+}
+
+.cloud_2 .fusion::after {
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    right: -8px;
+    width: 10px;
+    height: 10px;
+    border: 6px solid #fff;
+    border-width: 6px 0 6px 6px;
+    border-radius: 14px 0 0 14px;
+    z-index: -1
+}
+
+.cloud_2::before {
+    content: '';
+    position: absolute;
+    bottom: -26px;
+    left: -32px;
+    width: 102px;
+    height: 16px;
+    background: #2b8cbe;
+    border-radius: 16px
+}
+
+.cloud_3 {
+    position: absolute;
+    bottom: 156px;
+    left: 710px;
+    width: 92px;
+    height: 12px;
+    background: #0868ac;
+    border-radius: 12px
+}
+
+.cloud_3::before {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: -16px;
+    width: 32px;
+    height: 12px;
+    background: #0868ac;
+    border-radius: 12px
+}
