@@ -615,7 +615,8 @@
   height: 100%;
   position: fixed;
 }
-@media all (max-width:600) {
+
+@media (max-width:600px) {
   .background {
     width: 70%;
   }
