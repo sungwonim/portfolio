@@ -25,6 +25,11 @@ body {
         background-attachment: fixed;
     }
 }
+@media (max-width:800px) {
+  body {
+    overflow-x: hidden
+  }
+}
 
 a {
     color: #09a54a;
@@ -252,7 +257,6 @@ h6 {}
     position: relative;
     color: #555;
     font-size: 16px;
-    font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
 
@@ -316,7 +320,7 @@ h6 {}
     left: 15px;
     z-index: 9999;
     overflow-y: auto;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     transition: ease-in-out 0.2s;
     opacity: 0;
     visibility: hidden;
@@ -334,9 +338,9 @@ h6 {}
 .mobile-nav a {
     display: block;
     position: relative;
-    color: #000;
+    color: #fff;
     padding: 10px 20px;
-    font-weight: 500;
+    font-weight: 400;
     outline: none;
 }
 
