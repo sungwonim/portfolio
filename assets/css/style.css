@@ -18,6 +18,7 @@ body {
     overflow-x: hidden;
     cursor: url(../img/pointer.cur), auto;
     -webkit-cursor: url(../img/pointer.cur), auto;
+     max-width: 100%;
 }
 
 @media (min-width: 1024px) {
@@ -219,6 +220,7 @@ h6 {}
     #header h2 {
         font-size: 20px;
         line-height: 30px;
+        max-width: 65%;
     }
 
     #header .social-links {
@@ -454,6 +456,9 @@ section .container {
     section.section-show {
         top: 80px;
     }
+    section .container {
+    background: #fff;
+  }
 }
 
 .section-title {

@@ -610,7 +610,11 @@
 
 
 /*============================================================= */
-
+.background {
+  width: 70%;
+  height: 100%;
+  position: fixed;
+}
 
 .ground {
     position: absolute;
