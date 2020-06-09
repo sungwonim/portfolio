@@ -18,11 +18,7 @@ body {
     overflow-x: hidden;
     cursor: url(../img/pointer.cur), auto;
     -webkit-cursor: url(../img/pointer.cur), auto;
-<<<<<<< HEAD
      max-width: 100%;
-=======
-    max-width:100%;
->>>>>>> 36f0dca853b2aaed4e00d76b80fbc11670a74b06
 }
 
 @media (min-width: 1024px) {
@@ -402,7 +398,7 @@ h6 {}
 
 #header.header-top .img-fluid {
     margin-right: auto;
-    width: 60%;
+    width: 50%;
 }
 
 #header.header-top .container {
