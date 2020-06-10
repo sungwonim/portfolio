@@ -866,6 +866,7 @@ section .container {
     padding-top: 60px;
     padding-bottom: 80px;
     margin: 0 auto;
+  position: relative;
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -940,14 +941,15 @@ section .container {
 
 .portfolio-details .portfolio-info .portfolio-info-txt {
     float: left;
-    margin-left: 150px;
     margin-top: 50px;
 }
 
 .portfolio-details .portfolio-info .muze-video {
     float: right;
 }
-
+.muze-video {
+  z-index: -3;
+}
 .portfolio-details .styleguide img {
     margin: 0 auto !important;
 }
@@ -988,11 +990,70 @@ section .container {
     background: #00BD19;
 }
 
+.muzetxt {
+  padding-top: 100px;
+}
+
+
 @media (max-width: 992px) {
     .portfolio-details .portfolio-info {
         padding-top: 20px;
     }
 }
+
+
+.phone {
+  margin: 10px auto 50px auto;
+  box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.3);
+}
+
+.phone {
+  height: 550px;
+  width: 230px;
+  background: #ddd;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.phone-shade {
+    position: absolute;
+    height: 600px;
+    width: 200px;
+    left: 50%;
+    background: #ccc;
+    transform: rotate(18deg);
+  }
+  .phone-speaker {
+    height: 8px;
+    width: 42px;
+    border-radius: 4px;
+    background: #aaa;
+    position: relative;
+    top: 20px;
+    left: 50%;
+    margin-left: -21px;
+  }
+  .phone-button {
+    height: 30px;
+    width: 30px;
+    background: #aaa;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    bottom: 10px;
+  }
+  .phone-screen {
+    height: 450px;
+    width: 200px;
+    background: #fff;
+    position: absolute;
+    left:50%;
+    top: 45px;
+    margin-left: -100px;
+    overflow: hidden;
+}
+
 
 /*--------------------------------------------------------------
 # Credits
